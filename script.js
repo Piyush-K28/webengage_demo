@@ -3,6 +3,10 @@ const DEMO_PASS     = 'lumina123';
 const SPECIAL_EMAIL = 'piyush.khopade@webengage.com';
 const SPECIAL_PASS  = '123456';
 
+
+webengage.user.login('9SBOkLVMWvPX'); //9SBOkLVMWvPX is the unique user identifier being used here
+webengage.user.setAttribute('we_email', 'john@doe.com');
+webengage.user.setAttribute('we_birth_date', '1986-08-19');
 /* ── LOGIN ── */
 function handleLogin() {
   const email = document.getElementById('login-email').value.trim();
