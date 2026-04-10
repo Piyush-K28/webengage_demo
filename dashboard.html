@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumina — Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="dashboard.html">Lumina</a>
+  <div class="nav-links">
+    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a class="logout-btn" onclick="showLogout()">Logout</a>
+  </div>
+</nav>
+
+<div class="page-shell">
+  <div class="dash-header fade-in">
+    <span>Welcome back</span>
+    <h1 id="dash-name">Good morning, Alex</h1>
+  </div>
+
+  <div class="dash-stats fade-in">
+    <div class="stat-cell">
+      <div class="label">Projects</div>
+      <div class="val">12</div>
+    </div>
+    <div class="stat-cell">
+      <div class="label">Completed</div>
+      <div class="val">8</div>
+    </div>
+    <div class="stat-cell">
+      <div class="label">In Progress</div>
+      <div class="val">3</div>
+    </div>
+    <div class="stat-cell">
+      <div class="label">Messages</div>
+      <div class="val">24</div>
+    </div>
+  </div>
+
+  <div class="dash-content">
+    <div class="dash-card fade-in">
+      <h3>Recent Activity</h3>
+      <div class="activity-item">
+        <div class="activity-dot"></div>
+        <div>
+          <p>Reviewed quarterly report</p>
+          <span>2 hours ago</span>
+        </div>
+      </div>
+      <div class="activity-item">
+        <div class="activity-dot"></div>
+        <div>
+          <p>Uploaded design assets for Project Delta</p>
+          <span>Yesterday, 4:30 PM</span>
+        </div>
+      </div>
+      <div class="activity-item">
+        <div class="activity-dot"></div>
+        <div>
+          <p>Sent proposal to client</p>
+          <span>Yesterday, 11:00 AM</span>
+        </div>
+      </div>
+      <div class="activity-item">
+        <div class="activity-dot"></div>
+        <div>
+          <p>Scheduled team meeting for Friday</p>
+          <span>2 days ago</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="dash-card fade-in">
+      <h3>Your Profile</h3>
+      <div class="profile-row">
+        <label>Name</label>
+        <p id="profile-name">Alex Johnson</p>
+      </div>
+      <div class="profile-row">
+        <label>Email</label>
+        <p id="profile-email">user@lumina.com</p>
+      </div>
+      <div class="profile-row">
+        <label>Role</label>
+        <p>Senior Designer</p>
+      </div>
+      <div class="profile-row">
+        <label>Member since</label>
+        <p>January 2024</p>
+      </div>
+      <div class="profile-row">
+        <label>Status</label>
+        <p style="color:#3a8a3a;">&#10003; Active</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LOGOUT MODAL -->
+<div class="modal-backdrop" id="logout-modal">
+  <div class="modal">
+    <h3>Signing out?</h3>
+    <p>You're about to leave your Lumina session. Any unsaved changes will be lost.</p>
+    <div class="modal-btns">
+      <button class="btn-cancel" onclick="hideLogout()">Stay</button>
+      <button class="btn-confirm" onclick="confirmLogout()">Sign Out</button>
+    </div>
+  </div>
+</div>
+
+<footer>&copy; 2024 Lumina. All rights reserved.</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumina — Contact</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Lumina</a>
+  <div class="nav-links">
+    <a href="about.html">About Us</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="index.html">Sign In</a>
+  </div>
+</nav>
+
+<div class="page-shell">
+  <div class="contact-layout">
+    <div class="contact-info fade-in">
+      <h1>Let's start a conversation.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <label>Address</label>
+          <p>42 Lumina House, Mahalaxmi,<br>Mumbai, MH 400011, India</p>
+        </div>
+        <div class="contact-item">
+          <label>Email</label>
+          <p>hello@lumina.com</p>
+        </div>
+        <div class="contact-item">
+          <label>Phone</label>
+          <p>+91 22 4567 8900</p>
+        </div>
+        <div class="contact-item">
+          <label>Hours</label>
+          <p>Monday – Friday, 9:00 AM – 6:00 PM IST</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-card fade-in">
+      <h2>Send us a message</h2>
+      <div class="form-row">
+        <div class="cf-field">
+          <label>First name</label>
+          <input type="text" placeholder="Lorem">
+        </div>
+        <div class="cf-field">
+          <label>Last name</label>
+          <input type="text" placeholder="Ipsum">
+        </div>
+      </div>
+      <div class="cf-field">
+        <label>Email</label>
+        <input type="email" placeholder="lorem@ipsum.com">
+      </div>
+      <div class="cf-field">
+        <label>Subject</label>
+        <input type="text" placeholder="How can we help?">
+      </div>
+      <div class="cf-field">
+        <label>Message</label>
+        <textarea class="field-input" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit…"></textarea>
+      </div>
+      <button class="btn-primary" onclick="submitContact()" style="margin-top:0.5rem;">Send Message</button>
+      <div class="contact-success" id="contact-success">
+        Thank you! We'll get back to you within 1–2 business days.
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>&copy; 2024 Lumina. All rights reserved.</footer>
+<script src="script.js"></script>
+</body>
+</html>
