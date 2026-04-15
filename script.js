@@ -3,6 +3,11 @@ const DEMO_PASS     = 'lumina123';
 const SPECIAL_EMAIL = 'piyush.khopade@webengage.com';
 const SPECIAL_PASS  = '123456';
 
+webengage.track("Added To Cart", {
+"Product ID" : "AXK1337",
+"Price" : 39.80,
+});
+
 webengage.user.login('9SBOkLVMWvPX'); //9SBOkLVMWvPX is the unique user identifier being used here
 webengage.user.setAttribute('we_email', 'john@doe.com');
 webengage.user.setAttribute('we_birth_date', '1986-08-19');
